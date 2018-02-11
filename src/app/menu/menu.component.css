@@ -1,0 +1,35 @@
+header{
+    background-image: url('../../assets/img/accueil.jpg');
+    background-size: cover;
+    min-height: 700px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#JDR{
+    background-image: url('../../assets/img/jdr.jpg');
+    background-size: cover;
+    height: 700px;
+    box-shadow: 5px 5px 5px grey;  
+}
+
+#inscription{
+    margin-right: 30px;
+}
+
+nav{
+    border-bottom: 1px solid white;
+}
+
+#description-accueil{
+    color : white;
+    margin-top : 150px;
+}
+
+h1 {
+    font-family: "Anton", "sans-serif";
+}
+
+p{
+    font-family: 'Lato', sans-serif; 
+}

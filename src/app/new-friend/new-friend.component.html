@@ -1,0 +1,17 @@
+<h1>Gestion des avatars</h1>
+<div class="row">
+  <form [formGroup]="friendForm" (ngSubmit)="post()" class="form-inline">
+    <div class="form-group">
+      <label for="nameInput">name : </label>
+      <input type="text" name="username" class="form-control" formControlName="name">
+      <div *ngIf="nameCtrl.dirty && nameCtrl.hasError('required')">Le login est obligatoire</div>
+      <div *ngIf="nameCtrl.dirty && nameCtrl.hasError('minlength')">Le login doit contenir au moins 3 caractéres</div>
+    </div>
+    <div class="form-group">
+      <label for="loginInput">Game : </label>
+      <input type="text" name="password" class="form-control" formControlName="game">
+      <div *ngIf="gameCtrl.dirty && gameCtrl.hasError('required')">Le password est obligatoire</div>
+    </div>
+    <button type="submit" [disabled]="friendForm.invalid" class="btn btn-primary">Ajouter un avatar</button>
+  </form>
+</div>

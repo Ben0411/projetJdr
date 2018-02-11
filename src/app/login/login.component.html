@@ -1,0 +1,14 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()"> 
+  <div class="form-group">
+    <label for="usernameInput">Login : </label>
+    <input type="text" name="username" class="form-control" formControlName="username">
+    <div *ngIf="usernameCtrl.dirty && usernameCtrl.hasError('required')" class="error">Le login est obligatoire</div>
+    <div *ngIf="usernameCtrl.dirty && usernameCtrl.hasError('minlength')" class="error">Le login doit contenir au moins 3 caractéres</div>
+  </div>
+  <div class="form-group">
+    <label for="loginInput">password : </label>
+    <input type="password" name="password" class="form-control" formControlName="password">
+    <div *ngIf="passwordCtrl.dirty && passwordCtrl.hasError('required')" class="error">Le password est obligatoire</div>
+  </div>
+  <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">se connecter</button>
+</form>

@@ -1,0 +1,14 @@
+<div class="row">
+  <div *ngFor="let friend of webService.friends">
+    <div class="card" style="width: 20rem;">
+      <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+      <div class="card-block">
+        <h4 class="card-title">{{friend.name}}</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">{{friend.game}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

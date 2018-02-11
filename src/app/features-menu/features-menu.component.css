@@ -1,0 +1,22 @@
+.card{
+    margin-bottom: 100px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-family: "Anton", "sans-serif";
+}
+
+.card-text{
+    height: 150px;
+    font-family: 'Lato', sans-serif; 
+}
+
+.card-footer{
+    background-color: dodgerblue;
+}
+
+.text-muted{
+    color: white !important;
+}

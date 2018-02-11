@@ -1,0 +1,16 @@
+form {
+    margin-bottom: 50px;
+}
+
+input.ng-invalid.ng-dirty {
+    border: 1px red solid;
+    }
+
+label {
+    color : white;
+    font-family: "Anton", "sans-serif";
+}
+
+.error{
+    color: white;
+}

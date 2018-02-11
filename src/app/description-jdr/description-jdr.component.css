@@ -1,0 +1,7 @@
+#jdr{
+    background-image: url('../../assets/img/jdr.jpg');
+    background-size: cover;
+    height: 700px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px grey;  
+}
